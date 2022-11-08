@@ -1,0 +1,215 @@
+
+/*Donation*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*######################## Utility class #################################*/
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ####################################################################### */
+
+/*0000000000000000000000000 Navbar Start 000000000000000000000000000 */
+	/*desktop style*/
+	.navbar-container input[type='checkbox'],
+	.navbar-container .hamburger-lines{
+			display: none;
+		}
+
+	.navbar{
+		box-shadow: 0px 5px 10px 0px #aaa;
+		position: fixed;
+		width: 100%;
+		background: #fff;
+		color: #000;
+		opacity: 0.85;
+		z-index: 999;
+	}
+
+	.navbar-container{
+		display: flex;
+		justify-content: space-between;
+		height: 64px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.menu-items{
+		order: 2;
+		display: flex;
+	}
+
+	.logo{
+		order: 1;
+		font-size: 3rem;
+	}
+
+	.menu-items li{
+		list-style: none;
+		margin-left: 1.5rem;
+		font-size: 1.8rem;
+	}
+
+	.navbar a{
+		color: #444;
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.5s ease-in-out;
+	}
+
+	.navbar a:hover{
+		color: #e33e3e;
+	}
+/*0000000000000000000000000 Navbar end 000000000000000000000000000 */
+
+
+
+.donate{
+    border: 0.1px solid #fff;
+    height: 97vh;
+}
+
+.donateMain{
+    margin-top: 8rem;
+}
+
+.donateItem1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.donateItem2{
+    border: 3px solid black;
+    width: 800px;
+}
+
+.donateInfo, .donateInfo0{
+    margin: 2rem;
+}
+
+.donateInfo label{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500
+}
+
+.donateInfo0 label{
+	display: block;
+    font-size: 2rem;
+    font-weight: 500
+}
+
+.donateInfo label::after{
+	content: '*';
+	display: inline;
+	color: red;
+}
+
+.donateInfo input{
+	width: 80%;
+	height: 3rem;
+	font-weight: 500;
+	outline: none;
+	border: 0.1px solid rgb(193, 190, 190);
+ }
+
+ .donateInfo input:focus{
+    box-shadow: none;
+    animation-name: box-shadow;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box-shadow{
+    from{box-shadow: none;}
+    to{box-shadow: 0px 0px 2px 1.3px rgb(87, 186, 247);}
+}
+
+ /*form-btn style*/
+ .form-btn{
+	display: block;
+	margin: 0 auto;
+	padding: 0.8rem 2.9rem;
+	background: #e63946;
+	border: none;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+
+
+/*+++++++++++++++++++++ Footer Start +++++++++++++++++++++++++++++++++++*/
+.footer{
+	background-color: rgba(5, 5, 5, 0.888);
+	height: 17.7vh;
+	margin-top: 2vh;
+}
+
+.footer .box-footer .icon{
+	text-align: center;
+	padding: 0.18rem;
+}
+
+.footer .box-footer .icon I{
+	padding: 0.7rem;
+	color: rgba(248, 247, 247, 0.879);
+}
+
+.footer .box-footer .icon p{
+	font-size: 0.75rem;
+	word-spacing: 0.3em;
+	font-weight: 500;
+	color: #fff;
+}
+
+.footerbtn{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0.8rem 2.9rem;
+	background: #e63946;
+	border: none;
+	margin-bottom: 1rem;
+	color: #fff;
+}
+/*+++++++++++++++++++++ Footer end +++++++++++++++++++++++++++++++++++*/
+
+.btn-primary{
+	display: inline-block;
+	padding: 1em 2.5em;
+	text-decoration: none;
+	border-radius: 50px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 1em;
+	color: rgb(0, 0, 0);
+	background: #fff;
+	margin: 1rem;
+}
+
+.icon a::first-line{
+	font-size: 1.8rem;
+}
+
+.icon p{
+	color: #fff;
+	font-size: 1.5rem;
+}
